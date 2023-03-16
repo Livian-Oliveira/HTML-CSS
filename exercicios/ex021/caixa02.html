@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>/*padding=preenchimento */
+    /*Minhas configurações de estilo para treino*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(194, 24, 24);
+            margin: 10px;
+        }
+        header{
+            background-color: rgb(236, 233, 155);
+            padding: 10px;
+            margin: 10px;
+        }
+        section#assuntos{/*seção de assuntos*/
+            color: rgb(71, 52, 216);
+            font-weight: bold;
+        }
+        nav{
+            background-color: rgb(247, 186, 31);
+            padding: 3px;
+            box-shadow:1px 1px 1px rgba(0, 0, 0, 0.302);/*Sombra de caixa*/
+        }
+        nav > a{ /*<a> filho de <nav> */
+            text-decoration: none; /*sem decoração no texto (sublinhado) */
+            color: white;/*cor da letra*/
+            font-weight: bold; /*largura da letra*/
+            margin-right: 70px;/*margem a direita (espaços)*/
+            
+        }
+        main{
+            background-color: rgb(245, 110, 227);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 60px 10px; /*raio da borda*/
+        }
+        article{
+            background-color: rgb(164, 219, 166);
+            padding: 10px;
+        }
+        article > aside {
+            background-color:white;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;/*rodapé no centro*/
+            padding: 2px;
+            margin: 10px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 50px;
+            border-radius: 50px; /*criando uma bola*/
+        }
+    </style>
+</head> <!--ESTRURA DE UM SITE (ñ é regra, é exemplo)-->
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis consequuntur expedita illo perspiciatis culpa id minima quisquam fugiat aperiam sunt, nesciunt magni error doloribus quia veritatis explicabo officia blanditiis!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
